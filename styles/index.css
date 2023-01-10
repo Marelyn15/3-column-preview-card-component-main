@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+
+  --Transparent-white: hsla(0, 0%, 100%, 0.75); /*(paragraphs)*/
+  --Very-light-gray: hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+}
+body {
+  font-family: "Lexend Deca", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Very-light-gray);
+}
+.container {
+  max-width: 23.438rem;
+}
+.element {
+  padding: 15% 0;
+  width: 18.75rem;
+}
+.container__element-1 {
+  background-color: var(--Bright-orange);
+  border-radius: 5px 5px 0 0;
+}
+.container__element-2 {
+  background-color: var(--Dark-cyan);
+}
+.container__element-3 {
+  background-color: var(--Very-dark-cyan);
+  border-radius: 0 0 5px 5px;
+}
+.container__element__header {
+  padding-left: 5%;
+}
+.container__element__title {
+  font-family: "Big Shoulders Display", cursive;
+  color: white;
+  text-transform: uppercase;
+}
+.container__element__paragraph {
+  color: var(--Transparent-white);
+  line-height: 2;
+  font-size: 15px;
+  padding: 5%;
+  font-weight: 100;
+}
+.container__element__button {
+  border-radius: 1.625rem;
+  width: 50%;
+  margin: 5%;
+  padding: 5%;
+  background-color: white;
+  border: white;
+  font-weight: bold;
+}
+.container__element__button:hover {
+  border: 1px solid white;
+  color: white;
+}
+.button-1 {
+  color: var(--Bright-orange);
+}
+.button-1:hover {
+  background-color: var(--Bright-orange);
+}
+.button-2 {
+  color: var(--Dark-cyan);
+}
+.button-2:hover {
+  background-color: var(--Dark-cyan);
+}
+.button-3 {
+  color: var(--Very-dark-cyan);
+}
+.button-3:hover {
+  background-color: var(--Very-dark-cyan);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 915px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+  }
+  .element {
+    height: auto;
+    width: auto;
+    padding: 5%;
+  }
+  .container__element-1 {
+    background-color: var(--Bright-orange);
+    border-radius: 5px 0px 0px 5px;
+  }
+  .container__element-2 {
+    background-color: var(--Dark-cyan);
+  }
+  .container__element-3 {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 5px 5px 0px;
+  }
+  .container__element__button{
+    width: 60%;
+    padding: 5%;
+  }
+}
